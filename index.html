@@ -17,7 +17,7 @@
     <p id="distance"></p>
 
     <div class="black animate__animated">
-        <img width="300" height="300" src="png-clipart-buried-treasure-ches.png" class="">
+        <img width="300" height="300" src="png-clipart-buried-treasure-ches.png" class="animate__animated img">
         <p class="congratulations"></p>
         <a class="start" href="index.html">Start</a>
     </div>
@@ -87,7 +87,8 @@
                 // alert("Found the treasure in " + clicks + " clicks!");
                 // $('body').fadeOut(2000).append('<div class="black"><img width="300" height="300" src="png-clipart-buried-treasure-ches.png"><p class="congratulations"></p><a class="start" href="index.html">Start</a></div>');
                 // $('.black').show(2000);
-                $('.black').addClass('show animate__tada');
+                $('.black').addClass('show');
+                $('.img').addClass('animate__bounceIn');
                 $('.congratulations').text('Found the treasure in ' + clicks + ' clicks!');
             }
 
