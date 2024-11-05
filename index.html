@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find the buried treasure!</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Roboto&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,14 +17,17 @@
 <body>
 
     <h1 id="heading">Find the buried treasure!</h1>
-    <img src="treasuremap.png" alt="treasure map" id="map" width="400" height="400">
+    <div class="overlay">
+        <img src="treasuremap.png" alt="treasure map" id="map" width="400" height="400">
+        <div class="black animate__animated">
+            <img width="250" height="250" src="png-clipart-buried-treasure-ches.png" class="animate__animated img">
+            <p class="congratulations">Found the treasure in 246 clicks!</p>
+            <a class="start" href="index.html">Start</a>
+        </div>
+    </div>
     <p id="distance"></p>
 
-    <div class="black animate__animated">
-        <img width="300" height="300" src="png-clipart-buried-treasure-ches.png" class="animate__animated img">
-        <p class="congratulations"></p>
-        <a class="start" href="index.html">Start</a>
-    </div>
+
 
     <script src="jquery-3.7.1.min.js"></script>
     <script>

@@ -2,16 +2,16 @@ body{
     overflow: hidden;
 }
 
+.overlay{
+    position: relative;
+    max-width: fit-content;
+}
+
 .black{
     position: absolute;
     inset: 0;
-    width: 100vw;
-    height: 100vh;
-
     opacity: 0;
     z-index: -1;
-
-    background-color: black;
 }
 
 .black.show{
@@ -26,8 +26,13 @@ body{
 
 .congratulations {
     color: white;
-    text-align: center;
+    margin: 0 auto 20px;
+    font-family: 'Itim';
+    padding: 5px;
     font-size: 18px;
+    background-color: black;
+    max-width: fit-content;
+    border-radius: 8px;
 }
 
 .start {
