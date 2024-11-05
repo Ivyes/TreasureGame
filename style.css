@@ -1,0 +1,31 @@
+.black{
+    position: absolute;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: black;
+}
+
+.black img {
+    margin: 15px auto 0;
+    display: block;
+}
+
+.congratulations {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.start {
+    display: block;
+    max-width: 60px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin: 0 auto;
+    padding-block: 18px;
+    background-color: darkblue;
+    border-radius: 16px;
+}

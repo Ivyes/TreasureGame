@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find the buried treasure!</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -72,7 +74,9 @@
 
             // Якщо клік було зроблено достатньо близько, кажемо гравцеві, що він переміг
             if (distance < 8) {
-                alert("Found the treasure in " + clicks + " clicks!");
+                // alert("Found the treasure in " + clicks + " clicks!");
+                $('body').append('<div class="black"><img width="300" height="300" src="png-clipart-buried-treasure-ches.png"><p class="congratulations"></p><a class="start" href="index.html">Start</a></div>');
+                $('.congratulations').text('Found the treasure in ' + clicks + ' clicks!');
             }
 
         });
