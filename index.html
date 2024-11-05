@@ -15,12 +15,19 @@
     <img src="treasuremap.png" alt="treasure map" id="map" width="400" height="400">
     <p id="distance"></p>
 
+    <div class="black"><img width="300" height="300" src="png-clipart-buried-treasure-ches.png">
+        <p class="congratulations"></p><a class="start" href="index.html">Start</a>
+    </div>
+
     <script src="jquery-3.7.1.min.js"></script>
     <script>
         // Отримуємо випадкове чисо від 0 до size
         var getRandomNumber = function (size) {
             return Math.floor(Math.random() * size);
         };
+
+        // Скриваємо модуль з привітанням
+        $('.black').hide();
 
         // Вираховуємо відстань між подією та ціллю
         var getDistance = function (event, target) {
@@ -75,11 +82,13 @@
             // Якщо клік було зроблено достатньо близько, кажемо гравцеві, що він переміг
             if (distance < 8) {
                 // alert("Found the treasure in " + clicks + " clicks!");
-                $('body').append('<div class="black"><img width="300" height="300" src="png-clipart-buried-treasure-ches.png"><p class="congratulations"></p><a class="start" href="index.html">Start</a></div>');
+                // $('body').fadeOut(2000).append('<div class="black"><img width="300" height="300" src="png-clipart-buried-treasure-ches.png"><p class="congratulations"></p><a class="start" href="index.html">Start</a></div>');
+                $('.black').show(2000);
                 $('.congratulations').text('Found the treasure in ' + clicks + ' clicks!');
             }
 
         });
+
     </script>
 
 
